@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.status(200).send("Trung From API");
+  const  data ={
+    name: "Trung",
+    action: "Hello world"
+  }
+  res.status(200).json(data);
 });
 
 module.exports = router;
