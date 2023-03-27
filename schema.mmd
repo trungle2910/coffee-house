@@ -1,0 +1,30 @@
+classDiagram
+    Admin <-- Drink
+    Admin <-- Table
+    Table <-- TableOrder
+    class Admin {
+        drink: []
+        table: []      
+        order: []
+    }
+    class Drink {         
+    Id : ,
+    type : ,
+    name: ,
+    decsription: ,
+    picture: ,
+    price: ,
+    }
+    class Table{
+    id : ,
+    tableName: ,
+    tableOrder: [],
+    totalPrice:
+    }
+    class TableOrder{
+        id:
+  		name : drink.name ,
+  		quantity: ,
+  		Note: ,
+  		price:   
+    }
