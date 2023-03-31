@@ -1,32 +1,21 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React from 'react'
+import { BrowserRouter as Router, Route,BrowserRouter, Switch } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import PublicLayout from './router/PublicLayout.js';
 
 
 function App() {
 
-  const [data, setData] = useState(null);
-
-useEffect(() => {
-    const fetchData = async() =>{
-      try {
-        const res = await fetch('http://localhost:5500/');
-        const data = await res.json();
-        setData(data);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchData();
-  }, []);
-console.log(data)
-
-if (!data) {
-  return <div>Loading...</div>;
-}
-
-  return (
-    <div> {data.name} {data.action} </div>
-  )
+ return (
+  <BrowserRouter>
+    <Router>
+      <Switch>
+        <Route path="/*" component={PublicLayout} />
+      </Switch>
+   </Router>
+  </BrowserRouter>
+ );
 }
 
 export default App
