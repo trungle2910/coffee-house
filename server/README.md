@@ -15,4 +15,5 @@ PGPASS=""
 ```bash
 npm run dev
 ```
-
+## How To...
+1 Use migrate: read in https://salsita.github.io/node-pg-migrate/#/
