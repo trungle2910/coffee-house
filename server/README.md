@@ -11,8 +11,11 @@ PORT=5500
 //pass postgres
 PGPASS=""
 ```
+ * or remane .evn.example to .env and replace  
+
 3 start server
 ```bash
 npm run dev
 ```
-
+## How To...
+1 Use migrate: read in https://salsita.github.io/node-pg-migrate/#/
