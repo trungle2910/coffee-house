@@ -7,8 +7,10 @@ var router = express.Router();
 //   res.send("hello");
 // });
 
-// get drink page
+//  drink 
 const drinkAPI = require("./drink.api.js")
-router.use("/drink", drinkAPI)
-
+router.use("/drink", drinkAPI);
+// user 
+const userAPI = require("./user.api.js")
+router.use("/user",userAPI)
 module.exports = router;

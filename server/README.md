@@ -11,6 +11,8 @@ PORT=5500
 //pass postgres
 PGPASS=""
 ```
+ * or remane .evn.example to .env and replace  
+
 3 start server
 ```bash
 npm run dev
