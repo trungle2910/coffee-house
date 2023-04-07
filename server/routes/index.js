@@ -11,6 +11,9 @@ var router = express.Router();
 const drinkAPI = require("./drink.api.js")
 router.use("/drink", drinkAPI);
 // user 
-const userAPI = require("./user.api.js")
-router.use("/user",userAPI)
+const tableAPI = require("./table.api.js")
+router.use("/table",tableAPI)
+//order
+const orderAPI = require('./order.api.js')
+router.use('/order', orderAPI)
 module.exports = router;
